@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="side-bar">
+         <center> side bar</center>
+        </div>
+        <div class="main-content">
+         <center>MAIN</center>
+         <div style="background-color: yellow;">
+            kennyking
+        </div>
+        <div style="background-color: rgb(215, 0, 208);">
+            kennyking
+        </div>
+        <div style="background-color: rgb(255, 94, 0);">
+            kennyking
+        </div>
+        </div>
+    </main>
+    
+</body>
+</html>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .side-bar{
+        background-color: red;
+    }
+    .main-content{
+        background-color: rgb(61, 3, 235);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+       /* padding: 40px;*/
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-top: 100px;
+
+    }
+    @media screen and(min-width:480px) {
+        body{
+            background-color: aqua;
+        }
+        main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        }
+    }
+</style>
